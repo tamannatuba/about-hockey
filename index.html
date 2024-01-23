@@ -2,119 +2,254 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Hockey</title>
-    <!-- daisy and tailwind cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font manrope -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Hockey</title>
+  <!-- daisy and tailwind cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
 
-    <!-- custom color -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'hockey-primary': '#FF4240',
-              }
-            }
+  <!-- custom color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'hockey-primary': '#FF4240',
           }
         }
-      </script>
+      }
+    }
+  </script>
 
-    <!-- customs styles -->
+  <!-- customs styles -->
 
-    <style>
-        .manrope-font{
-            font-family: 'Manrope', sans-serif;
-        }
-    </style>
+  <style>
+    .manrope-font {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 
 </head>
 
 <body class="manrope-font">
-    <header class="">
-        <nav class="container mx-auto">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Pages</a></li>
-                            <li><a>Blog</a></li>
-                            <li><a>Contact</a></li>
-                        </ul>
-                    </div>
-                    <a class="btn btn-ghost text-4xl">Hockey<span class="text-[#FF4240;]">'</span>s</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu text-base menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Pages</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <img src="images/frame.png" alt="">
-                    <a class="btn bg-hockey-primary text-white">Get Ticket</a>
-                </div>
+  <header class="">
+    <nav class="container mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-        </nav>
-
-        <div class="container mx-auto">
-          <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative bg-no-repeat w-full h-[600px] bg-cover bg-[url(./images/one.png)]">
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative bg-no-repeat bg-cover w-full bg-[url(./images/frametwo.jpg)]">
-              
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative bg-no-repeat bg-cover w-full bg-[url(./images/one.png)]">
-             
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative bg-no-repeat bg-cover w-full bg-[url(./images/frametwo.jpg)]">
-           
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
-            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
           </div>
+          <a class="btn btn-ghost text-4xl">Hockey<span class="text-[#FF4240;]">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu text-base menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <img src="images/frame.png" alt="">
+          <a class="btn bg-hockey-primary text-white">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mx-auto">
+      <div class="carousel w-full">
+        <div id="slide1"
+          class="carousel-item relative bg-no-repeat w-[100%] lg:w-full h-[600px] bg-cover bg-[url(./images/one.png)]">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative bg-no-repeat bg-cover w-full bg-[url(./images/frametwo.jpg)]">
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative bg-no-repeat bg-cover w-full bg-[url(./images/one.png)]">
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative bg-no-repeat bg-cover w-full bg-[url(./images/frametwo.jpg)]">
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main>
+    <!-- professional section -->
+    <section class="container mx-auto mt-6 p-4">
+      <h1 class="text-4xl font-bold text-center">Professional Hockeys Club</h1>
+      <p class="text-xl text-center">Hockey is the most interesting outdoor game in my view. It is also an ancient game
+        played for years in India</p>
+      <div class="lg:flex lg:justify-between text-center p-4">
+        <div class="p-4">
+          <div class="radial-progress text-rose-500" style="--value:87;" role="progressbar">87%</div>
+          <h3 class="text-xl font-semibold">Prayer Facility</h3>
+          <p class="">Hockey is the national game of india</p>
+        </div>
+        <div class="p-4">
+          <div class="radial-progress text-green-600" style="--value:95;" role="progressbar">95%</div>
+          <h3 class="text-xl font-semibold">Experienced Coach</h3>
+          <p class="">Hockey is the national game of india</p>
+
+        </div>
+        <div class="p-4">
+          <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar">90%</div>
+          <h3 class="text-xl font-bold">Senior Player</h3>
+          <p>Hockey is the national game of india</p>
+
+        </div>
+        <div class="p-4">
+          <div class="radial-progress text-primary" style="--value:80;" role="progressbar">80%</div>
+          <h3 class="text-xl font-bold">Training Ground</h3>
+          <p>Hockey is the national game of india</p>
 
         </div>
 
-    </header>
 
-    <main>
 
-    </main>
+
+      </div>
+
+
+    </section>
+
+    <!-- programe section -->
+    <section class="container mx-auto">
+      <h1 class="text-4xl font-extrabold text-center">Program Sections</h1>
+      <p class="text-xl text-center">Hockey is the most interesting outdoor game in my view. It is also an ancient game
+        played for years in India</p>
+
+      <div class="">
+        <div class="flex w-full">
+          <img src="./images/two.png" alt="">
+          <img src="./images/three.png" alt="">
+        </div>
+        <div class="">
+          <img src="./images/four.png" alt="">
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- contact -->
+    <section class="container mx-auto mt-6 mx-4">
+      <h1 class="text-4xl font-extrabold text-center">Get In Touch</h1>
+      <p class="text-center w-2/3 mx-auto py-4">Hockey is the most interesting outdoor game in my view. It is also an
+        ancient game played for years in India</p>
+        <hr>
+
+
+      <div class="grid gap-6 grid-cols-1 lg:grid-cols-3 py-4">
+        <div>
+          <div class="mb-4 bg-green-100 w-2/3 p-4 rounded-lg">
+            <img src="./images/groupone.png" alt="">
+            <p>
+              Phone Number :
+              <br>
+              <span class="font-bold pb-4">(+62) 123-321-543</span>
+            </p>
+          </div>
+          <div class="mt-6 bg-yellow-50 w-2/3 p-4 rounded-lg">
+            <img src="./images/grouptwo.png" alt="">
+            <p>
+              Phone Number :
+              <br>
+              <span class="font-bold">(+62) 123-321-543</span>
+            </p>
+          </div>
+          <div class="mt-8 bg-blue-100 w-2/3 p-4 rounded-lg">
+            <img src="./images/groupthree.png" alt="">
+            <p>
+              Phone Number :
+              <br>
+              <span class="font-bold">(+62) 123-321-543</span>
+            </p>
+          </div>
+        </div>
+        <div class="lg:col-span-2">
+          <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
+            <div>
+              <label for="">Your name</label>
+              <input type="text" placeholder="Enter your full name" class="mt-2 input input-bordered w-full "
+                disabled />
+
+            </div>
+            <div>
+              <label for="">Your Email</label>
+              <input type="text" placeholder="Enter your email" class="mt-2 input input-bordered w-full" disabled />
+
+            </div>
+            <div>
+              <label for="">Subject</label>
+              <input type="text" placeholder="Enter your subject" class="mt-2 input input-bordered w-full" disabled />
+
+            </div>
+            <div>
+              <label for="">Phone Number</label>
+              <input type="text" placeholder="Enter your phone number" class="mt-2 input input-bordered w-full"
+                disabled />
+
+            </div>
+
+
+          </div>
+          <div class="mt-4">
+            <label for="">Message</label>
+            <textarea class="w-full mt-2 h-40 textarea textarea-bordered" placeholder="Write your message"></textarea>
+
+          </div>
+          <input class="bg-red-500 text-white w-full rounded-lg p-2" type="button" value="Send Message">
+        </div>
+
+
+      </div>
+
+
+
+    </section>
+
+  </main>
 
 </body>
 
